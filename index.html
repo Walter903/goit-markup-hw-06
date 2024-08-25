@@ -49,12 +49,17 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
       <!--hero-->
-      <section class="hero-image">
+      <section class="hero-image hidden">
         <div class="container hero-container">
           <h1 class="text-hero">Effective Solutions for Your Business</h1>
           <button type="button" class="btn-order" data-modal-open>
@@ -64,7 +69,7 @@
       </section>
 
       <!--Discription-->
-      <section class="section-skills">
+      <section class="section-skills hidden">
         <div class="container">
           <h2 class="visually-hidden">Discription</h2>
           <ul class="discription-item">
@@ -120,7 +125,7 @@
         </div>
       </section>
       <!--Our team-->
-      <section class="section-team">
+      <section class="section-team hidden">
         <div class="container">
           <h2 class="our-team">Our Team</h2>
           <ul class="image-list">
@@ -300,7 +305,7 @@
         </div>
       </section>
       <!--Our portfolio-->
-      <section class="section-portfolio">
+      <section class="section-portfolio hidden">
         <div class="container">
           <h2 class="portfolio">Our Portfolio</h2>
           <ul class="portfolio-item">
@@ -423,7 +428,7 @@
       </section>
     </main>
     <!--Footer-->
-    <footer class="sec-footer">
+    <footer class="sec-footer hidden">
         <div class="container footer">
           <div class="first-footer">
             <a class="logo-footer-logo" href="./index.html"
@@ -477,7 +482,7 @@
           </div>
         </div>
       </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop hidden" data-modal>
        <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
