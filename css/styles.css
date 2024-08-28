@@ -473,7 +473,7 @@ height: 696px;
     .section-skills {
         margin-right: auto;
         margin-left: auto;
-        margin-bottom: 120px;
+        
         width: 736px;
         height: 312px;
       }
@@ -521,57 +521,62 @@ height: 696px;
   }
 
   @media screen and (min-width: 1158px) {
-
     .section-skills {
-        height: 104px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 120px;
-        padding: 120px 0;
-      }
-      
-      
-      .discription-item {
-        display: flex;
-        align-items: center;
-        gap: 24px;
-      }
+      min-width: 1440px;
+      height: 224px;
+    }
+    
+    
+    .discription-item {
+      display: flex;
+      width: 1128px;
+      height: 224px;
+      gap: 24px;
+    }
+     
+    .item-skills {
+      width: calc((100% - 72px) / 4);
+    }
 
-      .item-skills {
-        width: calc((100% - 72px) / 4);
-      }
+    .icon-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 264px;
+      height: 112px;
+      background-color: #f4f4fd;
+      border-radius: 4px;
+      border: 1px solid #8e8f99;
+      margin-bottom: 8px;
+    }
 
-      .icon-list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 112px;
-        background-color: #f4f4fd;
-        border-radius: 4px;
-        border: 1px solid #8e8f99;
-        margin-bottom: 8px;
-      }
+    .our-skills {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      text-align: left;
+      color: #2e2f42;
+      width: 264px;
+      height: 24px;
+      margin-bottom: 8px;
+    }
+    
+    .text-our-skills {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      text-align: left;
+      color: #434455;
+      width: 264px;
+      height: 72px;
+    }  
+  }
 
-      .our-skills {
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        text-align: left;
-        color: #2e2f42;
-        width: 264px;
-        height: 24px;
-        margin-bottom: 8px;
-      }
-      
-      .text-our-skills {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        text-align: left;
-        color: #434455;
-        width: 264px;
-        height: 72px;
-      }
+  /* Our team-mobile */
+   
+  .section-team {
+    background-color: #f4f4fd;
+   
   }
