@@ -68,6 +68,11 @@
     <main>
       <!--hero-->
       <section class="hero-image">
+        <picture>
+          <source srcset="./images/peoplem1x.jpg, ./images/peoplem2x.jpg" media="(max-width: 320px)">
+          <source srcset="./images/peptab1x.jpg, ./images/peptab2x.jpg" media="(min-width: 768px)"> 
+          <source srcset="./images/img-people.jpg, ./images/people-office2x.jpg" media="(min-width: 768px)">
+        </picture>
         <div class="container hero-container">
           <h1 class="text-hero">Effective Solutions for Your Business</h1>
           <button type="button" class="btn-order" data-modal-open>
@@ -140,7 +145,7 @@
             <li class="imeges-fone">
               <img
                 class="img-photo"
-                src="./images/img1.jpg"
+                src="./images/img1(1x).jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
@@ -183,7 +188,7 @@
             <li class="imeges-fone">
               <img
                 class="img-photo"
-                src="./images/img2.jpg"
+                src="./images/img 2(1x).jpg"
                 alt="Tom Ford"
                 width="264"
               />
@@ -490,7 +495,7 @@
           </div>
         </div>
       </footer>
-    <div class="backdrop hidden" data-modal>
+    <div class="backdrop" data-modal>
        <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
