@@ -49,15 +49,15 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button">
-          <svg class="burger-icon" width="24" height="24">
+        <button class="burger-btn" type="button" openModalBtn: document.querySelector("[data-modal-open]"),>
+          <svg class="burger-icon" width="24" height="24" >
             <use href="./images/icons.svg#icon-heroicons"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu" data-menu>
+      <div class="mobile-menu">
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" data-menu-close>Close</button>
+          <button class="mobile-menu-close" closeModalBtn: document.querySelector("[data-modal-close]"),>Close</button>
           <nav class="mobile-menu-nav">Navigation</nav>
           <address>Address</address>
           <div>Soc link</div>
@@ -495,9 +495,9 @@
           </div>
         </div>
       </footer>
-    <div class="backdrop hidden" data-modal>
+    <div class="backdrop hidden" refs.modal.classList.toggle("is-open");>
        <div class="modal">
-        <button class="modal-close-btn" type="button" data-modal-close>
+        <button class="modal-close-btn" type="button">
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
