@@ -49,15 +49,15 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button" openModalBtn: document.querySelector("[data-modal-open]"),>
-          <svg class="burger-icon" width="24" height="24" >
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-heroicons"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" closeModalBtn: document.querySelector("[data-modal-close]"),>Close</button>
+          <button class="mobile-menu-close" data-menu-close>Close</button>
           <nav class="mobile-menu-nav">Navigation</nav>
           <address>Address</address>
           <div>Soc link</div>
@@ -68,11 +68,6 @@
     <main>
       <!--hero-->
       <section class="hero-image">
-        <picture>
-          <source srcset="./images/peoplem1x.jpg, ./images/peoplem2x.jpg" media="(max-width: 320px)">
-          <source srcset="./images/peptab1x.jpg, ./images/peptab2x.jpg" media="(min-width: 768px)"> 
-          <source srcset="./images/img-people.jpg, ./images/people-office2x.jpg" media="(min-width: 768px)">
-        </picture>
         <div class="container hero-container">
           <h1 class="text-hero">Effective Solutions for Your Business</h1>
           <button type="button" class="btn-order" data-modal-open>
@@ -118,8 +113,7 @@
               </div>
               <h3 class="our-skills">Diligence</h3>
               <p class="text-our-skills">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
+                Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
               </p>
             </li>
             <li class="item-skills">
@@ -138,14 +132,14 @@
         </div>
       </section>
       <!--Our team-->
-      <section class="section-team">
+      <section class="section-team hidden">
         <div class="container">
           <h2 class="our-team">Our Team</h2>
           <ul class="image-list">
             <li class="imeges-fone">
               <img
                 class="img-photo"
-                src="./images/img1(1x).jpg"
+                src="./images/img1.jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
@@ -188,7 +182,7 @@
             <li class="imeges-fone">
               <img
                 class="img-photo"
-                src="./images/img 2(1x).jpg"
+                src="./images/img2.jpg"
                 alt="Tom Ford"
                 width="264"
               />
@@ -318,7 +312,7 @@
         </div>
       </section>
       <!--Our portfolio-->
-      <section class="section-portfolio">
+      <section class="section-portfolio hidden">
         <div class="container">
           <h2 class="portfolio">Our Portfolio</h2>
           <ul class="portfolio-item">
@@ -441,7 +435,7 @@
       </section>
     </main>
     <!--Footer-->
-    <footer class="sec-footer">
+    <footer class="sec-footer hidden">
         <div class="container footer">
           <div class="first-footer">
             <a class="logo-footer-logo" href="./index.html"
@@ -495,9 +489,9 @@
           </div>
         </div>
       </footer>
-    <div class="backdrop hidden" refs.modal.classList.toggle("is-open");>
+    <div class="backdrop hidden" data-modal>
        <div class="modal">
-        <button class="modal-close-btn" type="button">
+        <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
