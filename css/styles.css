@@ -284,6 +284,18 @@ margin-bottom: 48px;
 }
 
 /* hero-mobile */
+.hero-image {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(..//images/peo-mob-1x.jpg);
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 2x) {
+.hero-image {
+ background-image: url(../images/peo-mob-2x.jpg)
+}
+ }
 
 .text-hero {
   font-weight: 700;
@@ -324,6 +336,18 @@ margin-bottom: 48px;
 }
 
 /* hero-tab */
+@media screen and (min-width: 768px) {
+  .hero-image {
+    max-width: 768px;
+    background-image: url(../images/peo-tab-1x.jpg);
+  }
+} 
+
+@media screen and (min-width: 768px) and (min-resolution: 2x) {
+  .hero-image {
+    background-image: url(../images/peo-tab-2x.jpg);
+  }
+}
 
 @media screen and (min-width: 768px) {
   
@@ -372,22 +396,31 @@ margin-bottom: 48px;
 @media screen and (min-width: 1158px) {
   .hero-image {
     background: #2e2f42;
-    width: 1440px;
     height: 600px;
     margin: 0 auto;
     padding: 188px 0;
-    background-image: linear-gradient(
+    background-image: linear-gradient(  
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/img-people.jpg);
-    max-width: 1440px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+         )
   }
-
+ 
+}
   
+@media  screen and (min-width: 1158px) {
+  .hero-image {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    background-image: url(../images/peo-dex-1x.jpg);
+  }
+}
+
+@media  screen and (min-width: 1158px) and (min-resolution: 2x) {
+  .hero-image {
+    background-image: url(../images/peo-dex-2x.jpg);
+  }
+}
 
   .btn-order {
     background-color: #4d5ae5;
@@ -415,7 +448,7 @@ margin-bottom: 48px;
   .btn-order:focus {
     background-color: #404bbf;
   }
-}
+
 
 /* section-skills */
 
