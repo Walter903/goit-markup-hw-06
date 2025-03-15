@@ -82,6 +82,7 @@ button {
   display: none;
 }
 .logo-header-logo {
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
@@ -251,21 +252,25 @@ line-height: 24px;
 letter-spacing: 0.02em;
 color: #434455;
 }
-.list-mobiles {
+.menu-studio {
 font-weight: 700;
 font-size: 36px;
 line-height: 40px; 
 letter-spacing: 0.02em;
 color: #404bbf;
-margin-bottom: 40px;
 }
 .list-mobile {
+  font-family: "Roboto", sans-serif;
 font-weight: 700;
 font-size: 36px;
-line-height: 40px; 
+ line-height: 40px;
 letter-spacing: 0.02em;
 color: #2e2f42;
-margin-bottom: 40px;
+}
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .adress-menu {
 margin-bottom: 48px;
@@ -275,7 +280,21 @@ margin-bottom: 48px;
   display: flex;
   justify-content: space-between;
 }
-
+.svgicon {
+  fill: #f4f4fd;
+}
+.menuadress {
+font-weight: 500;
+font-size: 20px;
+line-height: 24px; 
+letter-spacing: 0.02em;
+color: #4d5ae5;
+}
+.adress-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -284,16 +303,27 @@ margin-bottom: 48px;
 }
 
 /* hero-mobile */
+
 .hero-image {
-  max-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(..//images/peo-mob-1x.jpg);
-}
+  background: #2e2f42;
+  margin: 0 auto;
+  padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/peo-mob-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+   }
 
 @media screen and (max-width: 767px) and (min-resolution: 2x) {
 .hero-image {
- background-image: url(../images/peo-mob-2x.jpg)
+ background-image: linear-gradient(
+  rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)
+), url(../images/peo-mob-2x.jpg)
 }
  }
 
@@ -338,18 +368,23 @@ margin-bottom: 48px;
 /* hero-tab */
 @media screen and (min-width: 768px) {
   .hero-image {
-    max-width: 768px;
-    background-image: url(../images/peo-tab-1x.jpg);
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ), url(../images/peo-tab-1x.jpg);
   }
 } 
 
 @media screen and (min-width: 768px) and (min-resolution: 2x) {
   .hero-image {
-    background-image: url(../images/peo-tab-2x.jpg);
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ), url(../images/peo-tab-2x.jpg);
   }
 }
 
-@media screen and (min-width: 768px) {
+
   
   .btn-order {
     background-color: #4d5ae5;
@@ -387,9 +422,10 @@ margin-bottom: 48px;
     min-height: 120px;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
     max-width: 496px;
   }
-}
+
 
 /* hero-dextop */
 
@@ -399,26 +435,23 @@ margin-bottom: 48px;
     height: 600px;
     margin: 0 auto;
     padding: 188px 0;
-    background-image: linear-gradient(  
+    background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
-         )
+      ),
+      url(../images/peo-dex-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
- 
-}
+   }
   
-@media  screen and (min-width: 1158px) {
-  .hero-image {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
-    background-image: url(../images/peo-dex-1x.jpg);
-  }
-}
-
 @media  screen and (min-width: 1158px) and (min-resolution: 2x) {
   .hero-image {
-    background-image: url(../images/peo-dex-2x.jpg);
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ), url(../images/peo-dex-2x.jpg);
   }
 }
 
@@ -453,31 +486,20 @@ margin-bottom: 48px;
 /* section-skills */
 
 .section-skills {
-  width: 288px;
-  height: 696px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 96px;
+ padding-top: 96px;
+ padding-bottom: 96px;
 }
 
 .discription-item {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-  margin-top: 96px;
-  width: 288px;
-height: 696px;
+  
 }
 
 .icon-list {
   display: none;
 }
-
-.item-skills {
-    width: 288px;
-    height: 120px;
-}
-
 
 .our-skills {
     font-size: 36px;
@@ -501,30 +523,17 @@ height: 696px;
 }
  
 @media screen and (min-width: 768px) {
-   
-    .section-skills {
-        margin-right: auto;
-        margin-left: auto;
-        
-        width: 736px;
-        height: 312px;
-      }
        
       .discription-item {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         gap: 24px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 96px;
-        height: 312px;
-        width: 736px;
+        row-gap: 72px;
+        column-gap: 24px;
       }
 
       .item-skills {
-        width: 356px;
-        height: 120px;
+        width: calc((100% - 64px) / 2);
       }
 
       .our-skills {
@@ -553,12 +562,7 @@ height: 696px;
   }
 
   @media screen and (min-width: 1158px) {
-    .section-skills {
-      min-width: 1440px;
-      height: 224px;
-    }
-    
-    
+
     .discription-item {
       display: flex;
       width: 1128px;
@@ -607,12 +611,13 @@ height: 696px;
   }
 
   /* Our team-mobile */
-   
   .section-team {
     background-color: #f4f4fd;
-    padding-bottom: 96px;
-   
+   margin: 0 auto;
+   padding-top: 96px;
+   padding-bottom: 96px;
   }
+   
   .our-team {
     font-size: 36px;
     font-weight: 700;
@@ -621,11 +626,19 @@ height: 696px;
     color: #2e2f42;
     text-align: center;
     text-transform: capitalize;
-    padding-top: 96px;
   }
+  .image-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 72px;
+      padding-top: 72px;
+  }
+
   .imeges-fone {
     width: 264px;
-    margin-top: 72px;
+
     background-color: #ffffff;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -683,6 +696,8 @@ height: 696px;
     .section-team {
       background-color: #f4f4fd;
      margin: 0 auto;
+     padding-top: 96px;
+     padding-bottom: 96px;
     }
     .our-team {
       min-width: 162px;
@@ -704,10 +719,10 @@ height: 696px;
      justify-content: center;
       gap: 24px;
       border-radius: 0px 0px 4px 4px;
+      padding-top: 72px;
     }
     .imeges-fone {
       background-color: #ffffff;
-     
       border-radius: 0px 0px 4px 4px;
       box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -770,9 +785,9 @@ height: 696px;
     }
     .section-team {
       background-color: #f4f4fd;
-      width: 1440px;
-      height: 732px;
       margin: 0 auto;
+    padding-top: 96px;
+    padding-bottom: 96px;
     }
     .our-team {
       min-width: 162px;
@@ -789,9 +804,9 @@ height: 696px;
     .image-list {
       display: flex;
       align-items: center;
-      padding-bottom: 150px;
       gap: 24px;
       border-radius: 0px 0px 4px 4px;
+      padding-top: 72px;
     }
     .imeges-fone {
       background-color: #ffffff;
@@ -858,10 +873,11 @@ height: 696px;
   
   .portfolio {
     text-align: center;
-    margin-bottom: 72px;
+    
   }
   .portfolio-item {
     flex-wrap: wrap;
+    padding-top: 72px;
      }
   .items-portfolio {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -927,14 +943,14 @@ height: 696px;
       text-transform: capitalize;
       color: #2e2f42;
       font-weight: 700;
-      margin-bottom: 72px;
+      
     }
     .portfolio-item {
       display: flex;
       align-items: center;
-      margin-top: 72px;
       column-gap: 24px;
       row-gap: 48px;
+      padding-top: 72px;
     }
     .items-portfolio {
       width: calc((100% - 48px) / 2);
@@ -1002,15 +1018,15 @@ height: 696px;
       text-transform: capitalize;
       color: #2e2f42;
       font-weight: 700;
-      margin-bottom: 72px;
+      
     }
     .portfolio-item {
       display: flex;
       align-items: center;
-      margin-top: 72px;
       flex-wrap: wrap;
       column-gap: 24px;
       row-gap: 48px;
+      padding-top: 72px;
     }
     .items-portfolio {
       width: calc((100% - 48px) / 3);
@@ -1251,8 +1267,6 @@ height: 696px;
   /*footer-dextop*/
   @media screen and (min-width: 1158px) {
     .sec-footer {
-      width: 1440px;
-      height: 312px;
       background: #2e2f42;
       margin: 0 auto;
 
