@@ -1137,6 +1137,9 @@ color: #4d5ae5;
    display: flex;
   justify-content: center;
   }
+  .svgicon {
+    fill: #f4f4fd;
+  }
 
   .list-footer {
     display: flex;
